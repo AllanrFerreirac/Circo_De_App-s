@@ -1,0 +1,9 @@
+C:\Users\Aluno\Desktop\CircoDeApp\bin\Debug\CircoDeApp.exe.config
+C:\Users\Aluno\Desktop\CircoDeApp\bin\Debug\CircoDeApp.exe
+C:\Users\Aluno\Desktop\CircoDeApp\bin\Debug\CircoDeApp.pdb
+C:\Users\Aluno\Desktop\CircoDeApp\obj\Debug\CircoDeApp.FrmBuscaCEP.resources
+C:\Users\Aluno\Desktop\CircoDeApp\obj\Debug\CircoDeApp.FrmPrincipal.resources
+C:\Users\Aluno\Desktop\CircoDeApp\obj\Debug\CircoDeApp.Properties.Resources.resources
+C:\Users\Aluno\Desktop\CircoDeApp\obj\Debug\CircoDeApp.csproj.GenerateResource.cache
+C:\Users\Aluno\Desktop\CircoDeApp\obj\Debug\CircoDeApp.exe
+C:\Users\Aluno\Desktop\CircoDeApp\obj\Debug\CircoDeApp.pdb
