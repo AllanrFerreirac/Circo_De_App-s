@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CircoDeApp
+namespace CircodeAppsTDS06
 {
     public partial class FrmPrincipal : Form
     {
@@ -26,6 +26,24 @@ namespace CircoDeApp
         {
             FrmBuscaCEP busca = new FrmBuscaCEP();
             busca.Show();
+        }
+
+        private void pbxJogo_Click(object sender, EventArgs e)
+        {
+            FrmJogo jogo = new FrmJogo();
+            jogo.Show();
+        }
+
+        private void pbxIMC_Click(object sender, EventArgs e)
+        {
+            FmrIMC imc = new FmrIMC();
+            imc.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FrmCarro car = new FrmCarro();
+            car.Show();
         }
     }
 }

@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 using System.Net;
 using System.IO;
 
-namespace CircoDeApp
+namespace CircodeAppsTDS06
 {
     public partial class FrmBuscaCEP : Form
     {
@@ -30,13 +30,11 @@ namespace CircoDeApp
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://viacep.com.br/ws/" + txtCEP.Text + "/json");
             request.AllowAutoRedirect = false;
             HttpWebResponse ChecaServidor = (HttpWebResponse)request.GetResponse();
-
             if (ChecaServidor.StatusCode != HttpStatusCode.OK)
             {
                 MessageBox.Show("Servidor Indisponível!");
-                return; //Sai da rotina e pra codificacao
+                return; //Sai da rotina e para e codificação
             }
-
             using (Stream webStream = ChecaServidor.GetResponseStream())
             {
                 if (webStream != null)
@@ -62,40 +60,46 @@ namespace CircoDeApp
                                     return;
                                 }
                             }
+
                             //Endereço
                             if (cont == 2)
                             {
                                 string[] valor = substring.Split(":".ToCharArray());
-                                lblEndereco.Text = valor[1];
+                                lblEndereco2.Text = valor[1];
                             }
+
                             //Complemento
                             if (cont == 3)
                             {
                                 string[] valor = substring.Split(":".ToCharArray());
-                                lblComplemento.Text = valor[1];
+                                lblComplemento2.Text = valor[1];
                             }
+
                             //Bairro
                             if (cont == 4)
                             {
                                 string[] valor = substring.Split(":".ToCharArray());
-                                lblBairro.Text = valor[1];
+                                lblBairro2.Text = valor[1];
                             }
+
                             //Cidade
                             if (cont == 5)
                             {
                                 string[] valor = substring.Split(":".ToCharArray());
-                                lblCidade.Text = valor[1];
+                                lblCidade2.Text = valor[1];
                             }
-                            //UF
-                            if (cont == 2)
-                            {
-                                string[] valor = substring.Split(":".ToCharArray());
-                                lblUF.Text = valor[1];
-                            }
+                            cont++;
                         }
                     }
-
                 }
+            }
+        }
+
+        private void txtCEP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != (char)44)
+            {
+                e.Handled = true;
             }
         }
     }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // As informações gerais sobre um assembly são controladas por
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associadas a um assembly.
-[assembly: AssemblyTitle("CircoDeApp")]
+[assembly: AssemblyTitle("CircodeAppsTDS06")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CircoDeApp")]
+[assembly: AssemblyProduct("CircodeAppsTDS06")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // O GUID a seguir será destinado à ID de typelib se este projeto for exposto para COM
-[assembly: Guid("6bfd7538-766a-4407-a725-db34c4c5d73c")]
+[assembly: Guid("15b6d1b5-0640-43f0-807b-46eef713c237")]
 
 // As informações da versão de um assembly consistem nos quatro valores a seguir:
 //
